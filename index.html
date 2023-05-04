@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Serie A Voting Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .results {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .results h2 {
+            text-align: center;
+        }
+
+        .results table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .results th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .results th {
+            background-color: #f2f2f2;
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Serie A Voting Page</h1>
+        <form action="#" method="post">
+            <fieldset style="width: max-content;">
+                <legend>34esima Giornata</legend>
+                <label for="milan-lazio">Milan-Lazio</label>
+                <input type="radio" name="milan-lazio" value="1"> 1
+                <input type="radio" name="milan-lazio" value="X"> X
+                <input type="radio" name="milan-lazio" value="2"> 2
+                <br>
+                <label for="roma-inter">Roma-Inter</label>
+                <input type="radio" name="roma-inter" value="1"> 1
+                <input type="radio" name="roma-inter" value="X"> X
+                <input type="radio" name="roma-inter" value="2"> 2
+                <br>
+                <label for="atalanta-juventus">Atalanta-Juventus</label>
+                <input type="radio" name="atalanta-juventus" value="1"> 1
+                <input type="radio" name="atalanta-juventus" value="X"> X
+                <input type="radio" name="atalanta-juventus" value="2"> 2
+                <br>
+            </fieldset>
+            <fieldset style="width: max-content;">
+                <legend>35esima Giornata</legend>
+                <label for="lazio-lecce">Lazio-Lecce</label>
+                <input type="radio" name="lazio-lecce" value="1"> 1
+                <input type="radio" name="lazio-lecce" value="X"> X
+                <input type="radio" name="lazio-lecce" value="2"> 2
+                <br>
+                <label for="salernitana-atalanta">Salernitana-Atalanta</label>
+                <input type="radio" name="salernitana-atalanta" value="1"> 1
+                <input type="radio" name="salernitana-atalanta" value="X"> X
+                <input type="radio" name="salernitana-atalanta" value="2"> 2
+                <br>
+                <label for="spezia-milan">Spezia-Milan</label>
+                <input type="radio" name="spezia-milan" value="1"> 1
+                <input type="radio" name="spezia-milan" value="X"> X
+                <input type="radio" name="spezia-milan" value="2"> 2
+                <br>
+                <label for="inter-sassuolo">Inter-Sassuolo</label>
+                <input type="radio" name="inter-sassuolo" value="1"> 1
+                <input type="radio" name="inter-sassuolo" value="X"> X
+                <input type="radio" name="inter-sassuolo" value="2"> 2
+                <br>
+                <label for="bologna-roma">Bologna-Roma</label>
+                <input type="radio" name="bologna-roma" value="1"> 1
+                <input type="radio" name="bologna-roma" value="X"> X
+                <input type="radio" name="bologna-roma" value="2"> 2
+                <br>
+                <label for="juventus-cremonese">Juventus-Cremonese</label>
+                <input type="radio" name="juventus-cremonese" value="1"> 1
+                <input type="radio" name="juventus-cremonese" value="X"> X
+                <input type="radio" name="juventus-cremonese" value="2"> 2
+                <br>
+            </fieldset>
+            <fieldset style="width: max-content;">
+                <legend>36esima Giornata</legend>
+                <br>
+                <label for="atalanta-verona">Atalanta-Hellas Verona</label>
+                <input type="radio" name="atalanta-verona" value="1"> 1
+                <input type="radio" name="atalanta-verona" value="X"> X
+                <input type="radio" name="atalanta-verona" value="2"> 2
+                <br>
+                <label for="milan-sampdoria">Milan-Sampdoria</label>
+                <input type="radio" name="milan-sampdoria" value="1"> 1
+                <input type="radio" name="milan-sampdoria" value="X"> X
+                <input type="radio" name="milan-sampdoria" value="2"> 2
+                <br>
+                <label for="napoli-inter">Napoli-Inter</label>
+                <input type="radio" name="napoli-inter" value="1"> 1
+                <input type="radio" name="napoli-inter" value="X"> X
+                <input type="radio" name="napoli-inter" value="2"> 2
+                <br>
+                <label for="udinese-lazio">Udinese-Lazio</label>
+                <input type="radio" name="udinese-lazio" value="1"> 1
+                <input type="radio" name="udinese-lazio" value="X"> X
+                <input type="radio" name="udinese-lazio" value="2"> 2
+                <br>
+                <label for="roma-salernitana">Roma-Salernitana</label>
+                <input type="radio" name="roma-salernitana" value="1"> 1
+                <input type="radio" name="roma-salernitana" value="X"> X
+                <input type="radio" name="roma-salernitana" value="2"> 2
+                <br>
+                <label for="empoli-juventus">Empoli-Juventus</label>
+                <input type="radio" name="empoli-juventus" value="1"> 1
+                <input type="radio" name="empoli-juventus" value="X"> X
+                <input type="radio" name="empoli-juventus" value="2"> 2
+                <br>
+            </fieldset>
+            <fieldset style="width: max-content;">
+                <legend>37esima Giornata</legend>
+                <br>
+                <label for="fiorentina-roma">Fiorentina-Roma</label>
+                <input type="radio" name="fiorentina-roma" value="1"> 1
+                <input type="radio" name="fiorentina-roma" value="X"> X
+                <input type="radio" name="fiorentina-roma" value="2"> 2
+                <br>
+                <label for="inter-atalanta">Inter-Atalanta</label>
+                <input type="radio" name="inter-atalanta" value="1"> 1
+                <input type="radio" name="inter-atalanta" value="X"> X
+                <input type="radio" name="inter-atalanta" value="2"> 2
+                <br>
+                <label for="juventus-milan">Juventus-Milan</label>
+                <input type="radio" name="juventus-milan" value="1"> 1
+                <input type="radio" name="juventus-milan" value="X"> X
+                <input type="radio" name="juventus-milan" value="2"> 2
+                <br>
+                <label for="lazio-cremonese">Lazio-Cremonese</label>
+                <input type="radio" name="lazio-cremonese" value="1"> 1
+                <input type="radio" name="lazio-cremonese" value="X"> X
+                <input type="radio" name="lazio-cremonese" value="2"> 2
+                <br>
+            </fieldset>
+            <fieldset style="width: max-content;">
+                <legend>38esima Giornata</legend>
+                <br>
+                <label for="atalanta-monza">Atalanta-Monza</label>
+                <input type="radio" name="atalanta-monza" value="1"> 1
+                <input type="radio" name="atalanta-monza" value="X"> X
+                <input type="radio" name="atalanta-monza" value="2"> 2
+                <br>
+                <label for="empoli-lazio">Empoli-Lazio</label>
+                <input type="radio" name="empoli-lazio" value="1"> 1
+                <input type="radio" name="empoli-lazio" value="X"> X
+                <input type="radio" name="empoli-lazio" value="2"> 2
+                <br>
+                <label for="milan-verona">Milan-Hellas Verona</label>
+                <input type="radio" name="milan-verona" value="1"> 1
+                <input type="radio" name="milan-verona" value="X"> X
+                <input type="radio" name="milan-verona" value="2"> 2
+                <br>
+                <label for="roma-spezia">Roma-Spezia</label>
+                <input type="radio" name="roma-spezia" value="1"> 1
+                <input type="radio" name="roma-spezia" value="X"> X
+                <input type="radio" name="roma-spezia" value="2"> 2
+                <br>
+                <label for="torino-inter">Torino-Inter</label>
+                <input type="radio" name="torino-inter" value="1"> 1
+                <input type="radio" name="torino-inter" value="X"> X
+                <input type="radio" name="torino-inter" value="2"> 2
+                <br>
+                <label for="udinese-juventus">Udinese-Juventus</label>
+                <input type="radio" name="udinese-juventus" value="1"> 1
+                <input type="radio" name="udinese-juventus" value="X"> X
+                <input type="radio" name="udinese-juventus" value="2"> 2
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Invia">
+        </form>
+
+        <!-- parte di script per calcolare la classifica -->
+        <script>
+            // funzione per calcolare la classifica
+            function calcolaClassifica() {
+                // inizializza la classifica
+                var classifica = [
+                    { squadra: "Napoli", punti: 80 },
+                    { squadra: "Lazio", punti: 64 },
+                    { squadra: "Juventus", punti: 63 },
+                    { squadra: "Inter", punti: 60 },
+                    { squadra: "Atalanta", punti: 58 },
+                    { squadra: "Milan", punti: 58 },
+                    { squadra: "Roma", punti: 58 },
+                    { squadra: "Fiorentina", punti: 46 },
+                    { squadra: "Bologna", punti: 45 },
+                    { squadra: "Monza", punti: 45 },
+                    { squadra: "Torino", punti: 45 },
+                    { squadra: "Sassuolo", punti: 43 },
+                    { squadra: "Udinese", punti: 43 },
+                    { squadra: "Salernitana", punti: 35 },
+                    { squadra: "Empoli", punti: 35 },
+                    { squadra: "Lecce", punti: 31 },
+                    { squadra: "Spezia", punti: 27 },
+                    { squadra: "Hellas Verona", punti: 27 },
+                    { squadra: "Cremonese", punti: 21 },
+                    { squadra: "Sampdoria", punti: 17 }
+                ];
+
+
+                // leggi i risultati delle partite dal form
+                var partite = [
+                    {
+                        giornata: 34,
+                        casa: 'Milan',
+                        trasferta: 'Lazio',
+                        risultato: document.querySelector('input[name="milan-lazio"]:checked').value
+                    },
+                    {
+                        giornata: 34,
+                        casa: 'Roma',
+                        trasferta: 'Inter',
+                        risultato: document.querySelector('input[name="roma-inter"]:checked').value
+                    },
+                    {
+                        giornata: 34,
+                        casa: 'Atalanta',
+                        trasferta: 'Juventus',
+                        risultato: document.querySelector('input[name="atalanta-juventus"]:checked').value
+                    },
+                    {
+                        giornata: 35,
+                        casa: 'Lazio',
+                        trasferta: 'Lecce',
+                        risultato: document.querySelector('input[name="lazio-lecce"]:checked').value
+                    },
+                    {
+                        giornata: 35,
+                        casa: 'Salernitana',
+                        trasferta: 'Atalanta',
+                        risultato: document.querySelector('input[name="salernitana-atalanta"]:checked').value
+                    },
+                    {
+                        giornata: 35,
+                        casa: 'Spezia',
+                        trasferta: 'Milan',
+                        risultato: document.querySelector('input[name="spezia-milan"]:checked').value
+                    },
+                    {
+                        giornata: 35,
+                        casa: 'Inter',
+                        trasferta: 'Sassuolo',
+                        risultato: document.querySelector('input[name="inter-sassuolo"]:checked').value
+                    },
+                    {
+                        giornata: 35,
+                        casa: 'Bologna',
+                        trasferta: 'Roma',
+                        risultato: document.querySelector('input[name="bologna-roma"]:checked').value
+                    },
+                    {
+                        giornata: 35,
+                        casa: 'Juventus',
+                        trasferta: 'Cremonese',
+                        risultato: document.querySelector('input[name="juventus-cremonese"]:checked').value
+                    },
+                    {
+                        giornata: 36,
+                        casa: 'Atalanta',
+                        trasferta: 'Hellas Verona',
+                        risultato: document.querySelector('input[name="atalanta-verona"]:checked').value
+                    },
+                    {
+                        giornata: 36,
+                        casa: 'Milan',
+                        trasferta: 'Sampdoria',
+                        risultato: document.querySelector('input[name="milan-sampdoria"]:checked').value
+                    },
+                    {
+                        giornata: 36,
+                        casa: 'Napoli',
+                        trasferta: 'Inter',
+                        risultato: document.querySelector('input[name="napoli-inter"]:checked').value
+                    },
+                    {
+                        giornata: 36,
+                        casa: 'Udinese',
+                        trasferta: 'Lazio',
+                        risultato: document.querySelector('input[name="udinese-lazio"]:checked').value
+                    },
+                    {
+                        giornata: 36,
+                        casa: 'Roma',
+                        trasferta: 'Salernitana',
+                        risultato: document.querySelector('input[name="roma-salernitana"]:checked').value
+                    },
+                    {
+                        giornata: 36,
+                        casa: 'Empoli',
+                        trasferta: 'Juventus',
+                        risultato: document.querySelector('input[name="empoli-juventus"]:checked').value
+                    },
+                    {
+                        giornata: 37,
+                        casa: 'Fiorentina',
+                        trasferta: 'Roma',
+                        risultato: document.querySelector('input[name="fiorentina-roma"]:checked').value
+                    },
+                    {
+                        giornata: 37,
+                        casa: 'Inter',
+                        trasferta: 'Atalanta',
+                        risultato: document.querySelector('input[name="inter-atalanta"]:checked').value
+                    },
+                    {
+                        giornata: 37,
+                        casa: 'Juventus',
+                        trasferta: 'Milan',
+                        risultato: document.querySelector('input[name="juventus-milan"]:checked').value
+                    },
+                    {
+                        giornata: 37,
+                        casa: 'Lazio',
+                        trasferta: 'Cremonese',
+                        risultato: document.querySelector('input[name="lazio-cremonese"]:checked').value
+                    },
+                    {
+                        giornata: 38,
+                        casa: 'Atalanta',
+                        trasferta: 'Monza',
+                        risultato: document.querySelector('input[name="atalanta-monza"]:checked').value
+                    },
+                    {
+                        giornata: 38,
+                        casa: 'Empoli',
+                        trasferta: 'Lazio',
+                        risultato: document.querySelector('input[name="empoli-lazio"]:checked').value
+                    },
+                    {
+                        giornata: 38,
+                        casa: 'Milan',
+                        trasferta: 'Hellas Verona',
+                        risultato: document.querySelector('input[name="milan-verona"]:checked').value
+                    },
+                    {
+                        giornata: 38,
+                        casa: 'Roma',
+                        trasferta: 'Spezia',
+                        risultato: document.querySelector('input[name="roma-spezia"]:checked').value
+                    },
+                    {
+                        giornata: 38,
+                        casa: 'Torino',
+                        trasferta: 'Inter',
+                        risultato: document.querySelector('input[name="torino-inter"]:checked').value
+                    },
+                    {
+                        giornata: 38,
+                        casa: 'Udinese',
+                        trasferta: 'Juventus',
+                        risultato: document.querySelector('input[name="udinese-juventus"]:checked').value
+                    }
+                ];
+
+                // loop over the matches and update the ranking accordingly
+                for (var i = 0; i < partite.length; i++) {
+                    var partita = partite[i];
+
+                    // find the home and away team in the ranking
+                    var squadraCasa = classifica.find(function (squadra) { return squadra.squadra === partita.casa; });
+                    var squadraTrasferta = classifica.find(function (squadra) { return squadra.squadra === partita.trasferta; });
+
+                    // update the points of the home and away team based on the match result
+                    if (partita.risultato === '1') {
+                        squadraCasa.punti += 3;
+                    } else if (partita.risultato === 'X') {
+                        squadraCasa.punti += 1;
+                        squadraTrasferta.punti += 1;
+                    } else if (partita.risultato === '2') {
+                        squadraTrasferta.punti += 3;
+                    }
+                }
+
+                // sort the ranking by points and return it
+                classifica.sort(function (a, b) { return b.punti - a.punti; });
+                return classifica;
+
+            }
+
+            // function to display the ranking on the page
+            function mostraClassifica() {
+                // calculate the ranking
+                var classifica = calcolaClassifica();
+
+                // create the HTML table to display the ranking
+                var table = '<table><thead><tr><th>Pos</th><th>Squadra</th><th>Punti</th></tr></thead><tbody>';
+                for (var i = 1; i < 7; i++) {
+                    var squadra = classifica[i];
+                    table += '<tr><td>' + (i+1) + '</td><td>' + squadra.squadra + '</td><td>' + squadra.punti + '</td></tr>';
+                }
+                table += '</tbody></table>';
+
+                // display the table on the page
+                document.querySelector('#classifica').innerHTML = table;
+
+            }
+
+            // attach the function to the submit event of the form
+            document.querySelector('form').addEventListener('submit', function (event) {
+                // prevent the default form submission
+                event.preventDefault();
+
+                // display the ranking on the page
+                mostraClassifica();
+
+            });
+
+        </script>
+    </div>
+    <div id="classifica"></div>
+</body>
+
+</html>
