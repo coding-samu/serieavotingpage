@@ -92,24 +92,6 @@
         <h1>Serie A Voting Page</h1>
         <form action="#" method="post">
             <fieldset style="width: max-content;">
-                <legend>34esima Giornata</legend>
-                <label for="milan-lazio">Milan-Lazio</label>
-                <input type="radio" name="milan-lazio" value="1"> 1
-                <input type="radio" name="milan-lazio" value="X"> X
-                <input type="radio" name="milan-lazio" value="2"> 2
-                <br>
-                <label for="roma-inter">Roma-Inter</label>
-                <input type="radio" name="roma-inter" value="1"> 1
-                <input type="radio" name="roma-inter" value="X"> X
-                <input type="radio" name="roma-inter" value="2"> 2
-                <br>
-                <label for="atalanta-juventus">Atalanta-Juventus</label>
-                <input type="radio" name="atalanta-juventus" value="1"> 1
-                <input type="radio" name="atalanta-juventus" value="X"> X
-                <input type="radio" name="atalanta-juventus" value="2"> 2
-                <br>
-            </fieldset>
-            <fieldset style="width: max-content;">
                 <legend>35esima Giornata</legend>
                 <label for="lazio-lecce">Lazio-Lecce</label>
                 <input type="radio" name="lazio-lecce" value="1"> 1
@@ -269,24 +251,6 @@
 
                 // leggi i risultati delle partite dal form
                 var partite = [
-                    {
-                        giornata: 34,
-                        casa: 'Milan',
-                        trasferta: 'Lazio',
-                        risultato: document.querySelector('input[name="milan-lazio"]:checked').value
-                    },
-                    {
-                        giornata: 34,
-                        casa: 'Roma',
-                        trasferta: 'Inter',
-                        risultato: document.querySelector('input[name="roma-inter"]:checked').value
-                    },
-                    {
-                        giornata: 34,
-                        casa: 'Atalanta',
-                        trasferta: 'Juventus',
-                        risultato: document.querySelector('input[name="atalanta-juventus"]:checked').value
-                    },
                     {
                         giornata: 35,
                         casa: 'Lazio',
