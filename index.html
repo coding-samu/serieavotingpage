@@ -92,39 +92,6 @@
         <h1>Serie A Voting Page</h1>
         <form action="#" method="post">
             <fieldset style="width: max-content;">
-                <legend>35esima Giornata</legend>
-                <label for="lazio-lecce">Lazio-Lecce</label>
-                <input type="radio" name="lazio-lecce" value="1"> 1
-                <input type="radio" name="lazio-lecce" value="X"> X
-                <input type="radio" name="lazio-lecce" value="2"> 2
-                <br>
-                <label for="salernitana-atalanta">Salernitana-Atalanta</label>
-                <input type="radio" name="salernitana-atalanta" value="1"> 1
-                <input type="radio" name="salernitana-atalanta" value="X"> X
-                <input type="radio" name="salernitana-atalanta" value="2"> 2
-                <br>
-                <label for="spezia-milan">Spezia-Milan</label>
-                <input type="radio" name="spezia-milan" value="1"> 1
-                <input type="radio" name="spezia-milan" value="X"> X
-                <input type="radio" name="spezia-milan" value="2"> 2
-                <br>
-                <label for="inter-sassuolo">Inter-Sassuolo</label>
-                <input type="radio" name="inter-sassuolo" value="1"> 1
-                <input type="radio" name="inter-sassuolo" value="X"> X
-                <input type="radio" name="inter-sassuolo" value="2"> 2
-                <br>
-                <label for="bologna-roma">Bologna-Roma</label>
-                <input type="radio" name="bologna-roma" value="1"> 1
-                <input type="radio" name="bologna-roma" value="X"> X
-                <input type="radio" name="bologna-roma" value="2"> 2
-                <br>
-                <label for="juventus-cremonese">Juventus-Cremonese</label>
-                <input type="radio" name="juventus-cremonese" value="1"> 1
-                <input type="radio" name="juventus-cremonese" value="X"> X
-                <input type="radio" name="juventus-cremonese" value="2"> 2
-                <br>
-            </fieldset>
-            <fieldset style="width: max-content;">
                 <legend>36esima Giornata</legend>
                 <br>
                 <label for="atalanta-verona">Atalanta-Hellas Verona</label>
@@ -227,66 +194,30 @@
                 // inizializza la classifica
                 var classifica = [
                     { squadra: "Napoli", punti: 83 },
-                    { squadra: "Lazio", punti: 64 },
-                    { squadra: "Juventus", punti: 66},
-                    { squadra: "Inter", punti: 63},
+                    { squadra: "Lazio", punti: 65 },
+                    { squadra: "Juventus", punti: 69},
+                    { squadra: "Inter", punti: 66},
                     { squadra: "Atalanta", punti: 58 },
                     { squadra: "Milan", punti: 61 },
-                    { squadra: "Roma", punti: 58 },
-                    { squadra: "Fiorentina", punti: 46 },
-                    { squadra: "Bologna", punti: 46 },
-                    { squadra: "Monza", punti: 46 },
-                    { squadra: "Torino", punti: 46 },
-                    { squadra: "Sassuolo", punti: 44 },
-                    { squadra: "Udinese", punti: 46 },
-                    { squadra: "Salernitana", punti: 35 },
-                    { squadra: "Empoli", punti: 38 },
-                    { squadra: "Lecce", punti: 31 },
-                    { squadra: "Spezia", punti: 27 },
-                    { squadra: "Hellas Verona", punti: 27 },
-                    { squadra: "Cremonese", punti: 24 },
-                    { squadra: "Sampdoria", punti: 17 }
+                    { squadra: "Roma", punti: 59 },
+                    { squadra: "Fiorentina", punti: 49 },
+                    { squadra: "Bologna", punti: 0 },
+                    { squadra: "Monza", punti: 0 },
+                    { squadra: "Torino", punti: 0 },
+                    { squadra: "Sassuolo", punti: 0 },
+                    { squadra: "Udinese", punti: 0 },
+                    { squadra: "Salernitana", punti: 0 },
+                    { squadra: "Empoli", punti: 0 },
+                    { squadra: "Lecce", punti: 0 },
+                    { squadra: "Spezia", punti: 0 },
+                    { squadra: "Hellas Verona", punti: 0 },
+                    { squadra: "Cremonese", punti: 0 },
+                    { squadra: "Sampdoria", punti: 0 }
                 ];
 
 
                 // leggi i risultati delle partite dal form
                 var partite = [
-                    {
-                        giornata: 35,
-                        casa: 'Lazio',
-                        trasferta: 'Lecce',
-                        risultato: document.querySelector('input[name="lazio-lecce"]:checked').value
-                    },
-                    {
-                        giornata: 35,
-                        casa: 'Salernitana',
-                        trasferta: 'Atalanta',
-                        risultato: document.querySelector('input[name="salernitana-atalanta"]:checked').value
-                    },
-                    {
-                        giornata: 35,
-                        casa: 'Spezia',
-                        trasferta: 'Milan',
-                        risultato: document.querySelector('input[name="spezia-milan"]:checked').value
-                    },
-                    {
-                        giornata: 35,
-                        casa: 'Inter',
-                        trasferta: 'Sassuolo',
-                        risultato: document.querySelector('input[name="inter-sassuolo"]:checked').value
-                    },
-                    {
-                        giornata: 35,
-                        casa: 'Bologna',
-                        trasferta: 'Roma',
-                        risultato: document.querySelector('input[name="bologna-roma"]:checked').value
-                    },
-                    {
-                        giornata: 35,
-                        casa: 'Juventus',
-                        trasferta: 'Cremonese',
-                        risultato: document.querySelector('input[name="juventus-cremonese"]:checked').value
-                    },
                     {
                         giornata: 36,
                         casa: 'Atalanta',
